@@ -15,6 +15,6 @@ anims.monkeyAutoJump = false
 anims.overhangClimb = false
 anims.slideExtended = false
 anims.sprintJump = false
-anims.pose = true
+anims.pose = false
 anims.ledgeJumps = false
 Flow.SetAnimations(anims)

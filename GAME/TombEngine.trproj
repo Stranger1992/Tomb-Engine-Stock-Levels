@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<Name>Tomb Engine BETA</Name>
+	<Name>Tomb Engine Stock Levels</Name>
 	<GameVersion>TombEngine</GameVersion>
 	<LevelsPath>$(ProjectDirectory)\Levels</LevelsPath>
 	<ScriptPath>$(ProjectDirectory)\Engine\Scripts</ScriptPath>
@@ -12,44 +12,44 @@
 			<SpecificFile>title_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 		<ProjectLevel>
-			<Name>settomb</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\settomb</FolderPath>
+			<Name>Tomb of Seth</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\Tomb of Seth</FolderPath>
 			<SpecificFile>settomb_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 		<ProjectLevel>
-			<Name>catacomb</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\catacomb</FolderPath>
-			<SpecificFile>catacomb_TombEngine.prj2</SpecificFile>
-		</ProjectLevel>
-		<ProjectLevel>
-			<Name>cleopal</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\cleopal</FolderPath>
-			<SpecificFile>cleopal_TombEngine.prj2</SpecificFile>
-		</ProjectLevel>
-		<ProjectLevel>
-			<Name>coastal</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\coastal</FolderPath>
+			<Name>Coastal Ruins</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\Coastal Ruins</FolderPath>
 			<SpecificFile>coastal_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 		<ProjectLevel>
-			<Name>karnak</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\karnak</FolderPath>
+			<Name>Catacombs</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\Catacombs</FolderPath>
+			<SpecificFile>catacomb_TombEngine.prj2</SpecificFile>
+		</ProjectLevel>
+		<ProjectLevel>
+			<Name>Temple of Karnak</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\Temple of Karnak</FolderPath>
 			<SpecificFile>karnak_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 		<ProjectLevel>
-			<Name>city</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\city</FolderPath>
-			<SpecificFile>city_TombEngine.prj2</SpecificFile>
+			<Name>Cleopatra's Palaces</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\Cleopatra's Palaces</FolderPath>
+			<SpecificFile>cleopal_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 		<ProjectLevel>
-			<Name>guard</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\guard</FolderPath>
+			<Name>Guardian of Semerkhet</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\Guardian of Semerkhet</FolderPath>
 			<SpecificFile>guard_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 		<ProjectLevel>
-			<Name>library</Name>
-			<FolderPath>$(ProjectDirectory)\Levels\library</FolderPath>
+			<Name>The Lost Library</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\The Lost Library</FolderPath>
 			<SpecificFile>library_TombEngine.prj2</SpecificFile>
+		</ProjectLevel>
+		<ProjectLevel>
+			<Name>City Of The Dead</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\City Of The Dead</FolderPath>
+			<SpecificFile>city_TombEngine.prj2</SpecificFile>
 		</ProjectLevel>
 	</Levels>
 </Project>

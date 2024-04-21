@@ -13,7 +13,7 @@ end
 -- !Section "Lara state"
 -- !Description "Sets air value to specified."
 -- !Arguments "Enumeration, [ Change | Set ], 20, Change adds/subtracts given value while Set forces it."
--- !Arguments "Numerical, [ -1000 | 1000 | 0 | 1 | 5 ], 15, Air value to define"
+-- !Arguments "Numerical, [ -1800 | 1800 | 0 | 1 | 5 ], 15, Air value to define"
 
 LevelFuncs.Engine.Node.ModifyLaraAir = function(operation, value)
 	if (operation == 0) then
@@ -28,7 +28,7 @@ end
 -- !Conditional "True"
 -- !Description "Checks current poison value."
 -- !Arguments "CompareOperator, 30, Kind of check"
--- !Arguments "Numerical, 20, Poison value, [ 0 | 1800 ]"
+-- !Arguments "Numerical, 20, Poison value, [ 0 | 1000 ]"
 
 LevelFuncs.Engine.Node.TestLaraPoison = function(operator, value)
 	return LevelFuncs.Engine.Node.CompareValue(TEN.Objects.Lara:GetPoison(), value, operator)
@@ -169,17 +169,20 @@ end
 -- !Description "Checks if Lara is currently mounting a vehicle and which vehicle it is."
 
 LevelFuncs.Engine.Node.TestLaraVehicleAndType = function(type)
-	local vehicleName = (type == 0) and ObjID.SNOWMOBILE
-		or (type == 1) and ObjID.QUAD
-		or (type == 2) and ObjID.SPEEDBOAT
-		or (type == 3) and ObjID.KAYAK
-		or (type == 4) and ObjID.UPV
-		or (type == 5) and ObjID.MINECART
-		or (type == 6) and ObjID.JEEP
-		or (type == 7) and ObjID.MOTORBIKE
-		or (type == 8) and ObjID.RUBBER_BOAT
+	local vehicleName =
+	{
+		[0] = ObjID.SNOWMOBILE,
+		[1] = ObjID.QUAD,
+		[2] = ObjID.SPEEDBOAT,
+		[3] = ObjID.KAYAK,
+		[4] = ObjID.UPV,
+		[5] = ObjID.MINECART,
+		[6] = ObjID.JEEP,
+		[7] = ObjID.MOTORBIKE,
+		[8] = ObjID.RUBBER_BOAT,
+	}
 	if TEN.Objects.Lara:GetVehicle() ~= nil then
-		return TEN.Objects.Lara:GetVehicle():GetObjectID() == vehicleName
+		return TEN.Objects.Lara:GetVehicle():GetObjectID() == vehicleName[type]
 	else
 		return false
 	end
